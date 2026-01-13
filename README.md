@@ -27,6 +27,6 @@ goteborg-historia/
 │   ├── db.js
 │   └── server.js
 │
-└── scraper/            # Python
+└── scraper/            # Python    
     ├── scrape_wikipedia.py
     └── requirements.txt

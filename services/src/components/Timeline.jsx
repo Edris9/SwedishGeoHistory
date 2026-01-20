@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './Timeline.css';
 
 export default function Timeline({ minYear = -12000, maxYear = 2026, onYearChange }) {
-    const [selectedYear, setSelectedYear] = useState(0);
+    const [selectedYear, setSelectedYear] = useState(maxYear);
     const containerRef = useRef(null);
     const isDragging = useRef(false);
     const startX = useRef(0);
@@ -21,7 +21,7 @@ export default function Timeline({ minYear = -12000, maxYear = 2026, onYearChang
     // Scroll med mushjul
     const handleWheel = (e) => {
         e.preventDefault();
-        const delta = e.deltaY > 0 ? 100 : -100;
+        const delta = e.deltaY > 0 ? 25 : -25;
         updateYear(selectedYear + delta);
     };
 
@@ -68,6 +68,8 @@ export default function Timeline({ minYear = -12000, maxYear = 2026, onYearChang
         };
     }, [selectedYear]);
 
+    
+
     const formatYear = (year) => {
         if (year < 0) return `${Math.abs(year)} f.Kr`;
         if (year === 0) return '0';
@@ -75,7 +77,7 @@ export default function Timeline({ minYear = -12000, maxYear = 2026, onYearChang
     };
 
     // Skapa streck - 100 stycken
-    const tickCount = 100;
+    const tickCount = 250;
     const ticks = Array.from({ length: tickCount }, (_, i) => i);
 
     return (
@@ -112,7 +114,7 @@ export default function Timeline({ minYear = -12000, maxYear = 2026, onYearChang
                         
                         // Är detta strecket aktivt?
                         const progress = (selectedYear - minYear) / (maxYear - minYear);
-                        const isActive = Math.abs(t - progress) < 0.015;
+                        const isActive = Math.abs(t - progress) < 0.002;
                         
                         const height = isActive ? 35 : 20;
                         const strokeWidth = isActive ? 3 : 1.5;

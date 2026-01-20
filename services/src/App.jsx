@@ -8,7 +8,7 @@ export default function App() {
     const [events, setEvents] = useState([]);
     const [filteredEvents, setFilteredEvents] = useState([]);
     const [selectedEvent, setSelectedEvent] = useState(null);
-    const [selectedYear, setSelectedYear] = useState(0);
+    const [selectedYear, setSelectedYear] = useState(2026);
 
     useEffect(() => {
         async function loadEvents() {
@@ -34,7 +34,7 @@ export default function App() {
             
             <Timeline 
                 minYear={-12000}
-                maxYear={0}
+                maxYear={2026}  // <-- Är detta 2026 eller 0?
                 onYearChange={handleYearChange}
             />
             

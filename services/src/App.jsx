@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import MapView from './components/Map';
 import EventPopup from './components/EventPopup';
 import Timeline from './components/Timeline';
+import SettingsMenu from './components/SettingsMenu';
 import { getEvents } from './services/api';
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
     const [filteredEvents, setFilteredEvents] = useState([]);
     const [selectedEvent, setSelectedEvent] = useState(null);
     const [selectedYear, setSelectedYear] = useState(2026);
+    const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
         async function loadEvents() {
@@ -19,10 +21,17 @@ export default function App() {
         loadEvents();
     }, []);
 
+    useEffect(() => {
+        if (showAll) {
+            setFilteredEvents(events);
+        } else {
+            const filtered = events.filter(e => e.year <= selectedYear);
+            setFilteredEvents(filtered);
+        }
+    }, [showAll, selectedYear, events]);
+
     const handleYearChange = (year) => {
         setSelectedYear(year);
-        const filtered = events.filter(e => e.year <= year);
-        setFilteredEvents(filtered);
     };
 
     return (
@@ -32,11 +41,15 @@ export default function App() {
                 onEventClick={(event) => setSelectedEvent(event)} 
             />
             
-            <Timeline 
-                minYear={-12000}
-                maxYear={2026}  // <-- Är detta 2026 eller 0?
-                onYearChange={handleYearChange}
-            />
+            <SettingsMenu showAll={showAll} setShowAll={setShowAll} />
+            
+            {!showAll && (
+                <Timeline 
+                    minYear={-12000}
+                    maxYear={2026}
+                    onYearChange={handleYearChange}
+                />
+            )}
             
             {selectedEvent && (
                 <EventPopup 

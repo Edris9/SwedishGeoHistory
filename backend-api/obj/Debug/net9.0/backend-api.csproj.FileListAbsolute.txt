@@ -45,3 +45,4 @@ D:\SwedishGeoHistori\SwedishGeoHistory\backend-api\obj\Debug\net9.0\refint\backe
 D:\SwedishGeoHistori\SwedishGeoHistory\backend-api\obj\Debug\net9.0\backend-api.pdb
 D:\SwedishGeoHistori\SwedishGeoHistory\backend-api\obj\Debug\net9.0\backend-api.genruntimeconfig.cache
 D:\SwedishGeoHistori\SwedishGeoHistory\backend-api\obj\Debug\net9.0\ref\backend-api.dll
+D:\SwedishGeoHistori\SwedishGeoHistory\backend-api\obj\Debug\net9.0\swae.build.ex.cache

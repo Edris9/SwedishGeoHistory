@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html, body, #root {
@@ -9,3 +10,16 @@ html, body, #root {
     height: 100%;
     background-color: #000;
 }
+
+/* Font family assignments */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Optional: Use Funnel Sans for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Funnel Sans', sans-serif;
+}
+
+/* Optional: Use Rubik Storm for special elements */
+/* .rubik-storm { font-family: 'Rubik Storm', cursive; } */

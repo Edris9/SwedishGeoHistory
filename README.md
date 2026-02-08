@@ -83,7 +83,7 @@ Från **12 000 f.Kr** (stenåldern – första människorna i Sverige) till **20
 |-----|-----------|
 | Frontend | React + Globe.gl |
 | Backend | C# (.NET) |
-| Databas | PostgreSQL |
+| Databas | PostgreSQL | Supabase
 | Scraper | Python |
 | AI-röst | Web Speech API |
 | Hosting | Railway + Netlify |

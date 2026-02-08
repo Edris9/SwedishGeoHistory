@@ -1,0 +1,128 @@
+.status-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.status-popup {
+  width: 90%;
+  max-width: 520px;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 20px;
+  padding: 32px 28px;
+  color: #e2e8f0;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+  animation: popupScale 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.status-popup h2 {
+  margin: 0 0 24px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #93c5fd;
+}
+
+.status-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+
+.status-section {
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.status-section.done {
+  border-left: 4px solid #10b981;
+}
+
+.status-section.todo {
+  border-left: 4px solid #f59e0b;
+}
+
+.status-section h3 {
+  margin: 0 0 12px;
+  font-size: 1.18rem;
+  font-weight: 600;
+}
+
+.status-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.status-section li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.status-section li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #94a3b8;
+}
+
+.status-ok-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.35);
+}
+
+.status-ok-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.5);
+}
+
+/* Animationer */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes popupScale {
+  from {
+    opacity: 0;
+    transform: scale(0.88) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .status-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .status-popup {
+    padding: 24px 20px;
+  }
+}

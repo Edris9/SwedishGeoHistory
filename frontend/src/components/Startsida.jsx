@@ -6,18 +6,28 @@ export default function Startsida({ onStart }) {
   const [namn, setNamn] = useState('');
 
   // components/Startsida.jsx  (ändra längst ner i handleStart)
-    function handleStart() {
-        if (!role || !namn.trim()) {
-            alert('Välj roll och skriv ditt namn tack!');
-            return;
-        }
-        
-        console.log(`Roll: ${role} | Namn: ${namn.trim()}`);
-        // alert(...);   ← ta bort eller kommentera bort om du inte vill ha popup
-
-        // Anropa förälderns funktion för att dölja startsidan
-        onStart?.();
+    async function handleStart() {
+    if (!role || !namn.trim()) {
+        alert('Välj roll och skriv ditt namn tack!');
+        return;
     }
+    
+    // Spara till Supabase via backend
+    try {
+        await fetch('http://localhost:5007/api/users', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                role: role,
+                name: namn.trim()
+            })
+        });
+    } catch (error) {
+        console.log('Kunde inte spara användare:', error);
+    }
+
+    onStart?.();
+}
 
   return (
     <div className="startsida">
@@ -63,7 +73,7 @@ export default function Startsida({ onStart }) {
         </div>
 
         <p className="small-info">
-          Ingen data sparas – bara en liten stund av nyfikenhet.
+          Jag vill veta vilka som besöker kartan.
         </p>
       </div>
     </div>

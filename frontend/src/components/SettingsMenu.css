@@ -88,3 +88,11 @@
 .settings-checkbox-hidden {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .event-popup, .timeline, .startsida {
+    max-width: 96vw !important;
+    padding: 16px;
+    font-size: clamp(14px, 3.5vw, 18px);
+  }
+}

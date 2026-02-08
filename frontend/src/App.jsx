@@ -4,8 +4,9 @@ import MapView from './components/Map';
 import EventPopup from './components/EventPopup';
 import Timeline from './components/Timeline';
 import SettingsMenu from './components/SettingsMenu';
-import Startsida from './components/Startsida';   // ← din nya komponent
+import Startsida from './components/Startsida';   
 import { getEvents } from './services/api';
+import ProjectStatusPopup from './components/ProjectStatusPopup';   
 
 export default function App() {
     const [events, setEvents] = useState([]);
@@ -13,9 +14,10 @@ export default function App() {
     const [selectedEvent, setSelectedEvent] = useState(null);
     const [selectedYear, setSelectedYear] = useState(2026);
     const [showAll, setShowAll] = useState(false);
-    
-    // Ny state för att visa/hide startsida
     const [showStartscreen, setShowStartscreen] = useState(true);
+    
+    // ← Lägg till denna rad (detta saknades troligen)
+    const [showStatus, setShowStatus] = useState(true);
 
     useEffect(() => {
         async function loadEvents() {
@@ -39,40 +41,46 @@ export default function App() {
         setSelectedYear(year);
     };
 
-    // Funktion som anropas när användaren klickar "Börja utforska kartan"
     const handleStartExploring = () => {
         setShowStartscreen(false);
     };
 
-    if (showStartscreen) {
-        return (
-            <Startsida onStart={handleStartExploring} />
-        );
-    }
-
     return (
-        <div>
-            <MapView 
-                events={filteredEvents} 
-                onEventClick={(event) => setSelectedEvent(event)} 
-            />
-            
-            <SettingsMenu showAll={showAll} setShowAll={setShowAll} />
-            
-            {!showAll && (
-                <Timeline 
-                    minYear={-12000}
-                    maxYear={2026}
-                    onYearChange={handleYearChange}
-                />
+        <>
+            {/* Projektstatus visas alltid först – stäng för att se resten */}
+            {showStatus && (
+                <ProjectStatusPopup onClose={() => setShowStatus(false)} />
             )}
-            
-            {selectedEvent && (
-                <EventPopup 
-                    event={selectedEvent} 
-                    onClose={() => setSelectedEvent(null)} 
-                />
+
+            {showStartscreen ? (
+                <Startsida onStart={handleStartExploring} />
+            ) : (
+                <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
+                    <MapView 
+                        events={filteredEvents} 
+                        onEventClick={(event) => setSelectedEvent(event)} 
+                    />
+                    
+                    <SettingsMenu showAll={showAll} setShowAll={setShowAll} />
+                    
+                    {!showAll && (
+                        <Timeline 
+                            minYear={-12000}
+                            maxYear={2026}
+                            onYearChange={handleYearChange}
+                        />
+                    )}
+                    
+                    {selectedEvent && (
+                        <EventPopup 
+                            event={selectedEvent} 
+                            onClose={() => setSelectedEvent(null)} 
+                        />
+                    )}
+                </div>
             )}
-        </div>
+        </>
+        
     );
+    
 }

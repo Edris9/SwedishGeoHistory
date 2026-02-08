@@ -1,8 +1,4 @@
-import { useEffect, useRef } from 'react';
-import * as maptilersdk from '@maptiler/sdk';
-import '@maptiler/sdk/dist/maptiler-sdk.css';
-
-const SWEDEN_COORDS = {
+export const SWEDEN_COORDS = {
     'halland': { lat: 56.89, lng: 12.80 },
     'bohuslän': { lat: 58.32, lng: 11.45 },
     'skåne': { lat: 55.99, lng: 13.59 },
@@ -32,7 +28,6 @@ const SWEDEN_COORDS = {
     'blekinge': { lat: 56.17, lng: 15.58 },
     'öland': { lat: 56.66, lng: 16.64 },
     'dalsland': { lat: 58.88, lng: 12.17 },
-
     'linköping': { lat: 58.41, lng: 15.62 },
     'norrköping': { lat: 58.59, lng: 16.18 },
     'västerås': { lat: 59.61, lng: 16.55 },
@@ -369,58 +364,8 @@ const SWEDEN_COORDS = {
 };
 
 
-
-function getCoords(area, index) {
-    const key = area ? area.toLowerCase() : 'sverige';
-    const base = SWEDEN_COORDS[key] || { lat: 62, lng: 15 };
-    
-    // Slumpmässig spridning baserat på index
-    const spread = 0.3;
-    const offsetLat = (Math.sin(index * 2.5) * spread);
-    const offsetLng = (Math.cos(index * 3.7) * spread);
-    
-    return {
-        lat: base.lat + offsetLat,
-        lng: base.lng + offsetLng
-    };
-}
-
-export default function MapView({ events, onEventClick }) {
-    const mapContainer = useRef(null);
-
-    useEffect(() => {
-        maptilersdk.config.apiKey = 'kNPyqqEDajTwuaZTofx9';
-
-        const map = new maptilersdk.Map({
-            container: mapContainer.current,
-            style: maptilersdk.MapStyle.HYBRID,
-            center: [16, 62],
-            zoom: 3,
-            projection: 'globe'
-        });
-
-        map.on('load', () => {
-            events.forEach((event, index) => {
-                const coords = getCoords(event.area, index);
-
-                const marker = document.createElement('div');
-                marker.style.width = '15px';
-                marker.style.height = '15px';
-                marker.style.backgroundColor = '#ff4444';
-                marker.style.borderRadius = '50%';
-                marker.style.cursor = 'pointer';
-                marker.style.border = '2px solid white';
-
-                marker.addEventListener('click', () => onEventClick(event));
-
-                new maptilersdk.Marker({ element: marker })
-                    .setLngLat([coords.lng, coords.lat])
-                    .addTo(map);
-            });
-        });
-
-        return () => map.remove();
-    }, [events]);
-
-    return <div ref={mapContainer} style={{ width: '100%', height: '100vh' }} />;
+export function getCoords(area) {
+    if (!area) return { lat: 62, lng: 17 };
+    const key = area.toLowerCase();
+    return SWEDEN_COORDS[key] || { lat: 62, lng: 17 };
 }

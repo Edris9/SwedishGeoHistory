@@ -55,7 +55,7 @@ export default function App() {
             {showStartscreen ? (
                 <Startsida onStart={handleStartExploring} />
             ) : (
-                <div>
+                <div style={{ width: '100vw', height: '100vh', overflow: 'hidden' }}>
                     <MapView 
                         events={filteredEvents} 
                         onEventClick={(event) => setSelectedEvent(event)} 
@@ -80,5 +80,7 @@ export default function App() {
                 </div>
             )}
         </>
+        
     );
+    
 }

@@ -3,11 +3,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  pointer-events: none;
-  z-index: 800;
-  user-select: none;
+  height: 180px;               /* eller din höjd */
+  z-index: 1000;               /* högre än kartan */
+  pointer-events: auto;        /* så slidern funkar */
 }
+
 
 .timeline-bg {
   position: absolute;
@@ -91,5 +91,13 @@
   }
   .timeline-slider {
     height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-popup, .timeline, .startsida {
+    max-width: 96vw !important;
+    padding: 16px;
+    font-size: clamp(14px, 3.5vw, 18px);
   }
 }

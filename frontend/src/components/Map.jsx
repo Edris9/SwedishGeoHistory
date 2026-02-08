@@ -10,6 +10,7 @@ const MapView = forwardRef(({ events, onEventClick }, ref) => {
     const isRotating = useRef(true);
     const markersRef = useRef([]);
     
+    
 
     useImperativeHandle(ref, () => ({
         flyToSweden: () => {
@@ -94,8 +95,16 @@ const MapView = forwardRef(({ events, onEventClick }, ref) => {
 
         });
 
+        // Mobile responsive - handle window resize
+        const handleResize = () => map.resize?.();
+        window.addEventListener('resize', handleResize);
+        window.addEventListener('orientationchange', handleResize);
+        setTimeout(handleResize, 300);
+
         // Cleanup
         return () => {
+            window.removeEventListener('resize', handleResize);
+            window.removeEventListener('orientationchange', handleResize);
             if (mapInstance.current) {
                 mapInstance.current.remove();
             }

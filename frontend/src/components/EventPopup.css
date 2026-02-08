@@ -1,0 +1,182 @@
+.event-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.35s ease-out;
+}
+
+.event-popup {
+  position: relative;
+  width: 90%;
+  max-width: 460px;
+  background: rgba(20, 25, 40, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 28px 32px 32px;
+  color: #e2e8f0;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  animation: popupEnter 0.48s cubic-bezier(0.32, 0.72, 0, 1);
+  overflow: hidden;
+}
+
+.event-popup::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.event-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.09);
+  border: none;
+  color: #cbd5e1;
+  font-size: 1.6rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.22s ease;
+}
+
+.event-close-btn:hover {
+  background: #ef4444;
+  color: white;
+  transform: rotate(90deg) scale(1.08);
+}
+
+.event-title {
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+.event-meta {
+  font-size: 0.96rem;
+  color: #94a3b8;
+  margin: 0 0 22px;
+  font-weight: 500;
+}
+
+.event-description-wrapper {
+  max-height: 58vh;           /* hindrar extremt lång popup på mobil */
+  overflow-y: auto;
+  margin: 0 -4px 20px;        /* kompenserar för padding */
+  padding: 0 4px;
+  scrollbar-width: thin;
+}
+
+.event-description-wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+
+.event-description-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 4px;
+}
+
+.event-description {
+  font-size: 1.04rem;
+  line-height: 1.62;
+  margin: 0;
+  color: #d1d5db;
+}
+
+.event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.event-source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #60a5fa;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: rgba(96, 165, 250, 0.08);
+  transition: all 0.2s ease;
+}
+
+.event-source-link:hover {
+  background: rgba(96, 165, 250, 0.18);
+  color: #93c5fd;
+  transform: translateY(-1px);
+}
+
+.link-icon {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.event-more-btn {
+  background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.24s ease;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.28);
+  margin-left: auto;           /* trycker knappen till höger om länk finns */
+}
+
+.event-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.45);
+}
+
+/* Animationer */
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes popupEnter {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobilanpassning */
+@media (max-width: 480px) {
+  .event-popup {
+    padding: 24px 20px 28px;
+    max-width: 96%;
+  }
+  .event-title {
+    font-size: 1.48rem;
+  }
+  .event-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .event-more-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+}

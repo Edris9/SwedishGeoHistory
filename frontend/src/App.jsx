@@ -1,8 +1,10 @@
+// App.jsx
 import { useEffect, useState } from 'react';
 import MapView from './components/Map';
 import EventPopup from './components/EventPopup';
 import Timeline from './components/Timeline';
 import SettingsMenu from './components/SettingsMenu';
+import Startsida from './components/Startsida';   // ← din nya komponent
 import { getEvents } from './services/api';
 
 export default function App() {
@@ -11,6 +13,9 @@ export default function App() {
     const [selectedEvent, setSelectedEvent] = useState(null);
     const [selectedYear, setSelectedYear] = useState(2026);
     const [showAll, setShowAll] = useState(false);
+    
+    // Ny state för att visa/hide startsida
+    const [showStartscreen, setShowStartscreen] = useState(true);
 
     useEffect(() => {
         async function loadEvents() {
@@ -33,6 +38,17 @@ export default function App() {
     const handleYearChange = (year) => {
         setSelectedYear(year);
     };
+
+    // Funktion som anropas när användaren klickar "Börja utforska kartan"
+    const handleStartExploring = () => {
+        setShowStartscreen(false);
+    };
+
+    if (showStartscreen) {
+        return (
+            <Startsida onStart={handleStartExploring} />
+        );
+    }
 
     return (
         <div>

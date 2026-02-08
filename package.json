@@ -2,7 +2,7 @@
   "name": "swedish-geo-history",
   "scripts": {
     "backend": "cd backend-api && dotnet run",
-    "frontend": "cd services && npm run dev",
+    "frontend": "cd frontend && npm run dev",
     "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "devDependencies": {

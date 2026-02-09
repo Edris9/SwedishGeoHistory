@@ -27,9 +27,9 @@ export default function EventPopup({ event, onClose }) {
         </div>
 
         <div className="event-actions">
-          {event.sourceUrl && (
+          {event.source_url && (
             <a
-              href={event.sourceUrl}
+              href={event.source_url}
               target="_blank"
               rel="noopener noreferrer"
               className="event-source-link"

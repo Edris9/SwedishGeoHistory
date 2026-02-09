@@ -119,7 +119,7 @@
 @media (max-width: 600px) {
   .status-content {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap:15px;
   }
   
   .status-popup {

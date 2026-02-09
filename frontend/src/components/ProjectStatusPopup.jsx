@@ -1,15 +1,20 @@
-import { useState, useEffect } from 'react';
+jsx
+
+import { useState, useRef } from 'react';  // lägg till useRef
 import './ProjectStatusPopup.css';
 
 export default function ProjectStatusPopup({ onClose }) {
   const [visible, setVisible] = useState(true);
+  const popupRef = useRef(null);  // ref till popup-diven
 
   if (!visible) return null;
 
   return (
     <div className="status-overlay">
-      <div className="status-popup">
-        <h2> Projektstatus</h2>
+      <div className="status-popup" ref={popupRef}>
+        <h2>Projektstatus</h2>
+
+
 
         <div className="status-content">
           <div className="status-section done">
@@ -37,10 +42,7 @@ export default function ProjectStatusPopup({ onClose }) {
           </div>
         </div>
 
-        <button className="status-ok-btn" onClick={() => {
-          // localStorage.setItem('hasSeenProjectStatus', 'true'); // uncommenta om du vill spara
-          onClose();
-        }}>
+         <button className="status-ok-btn" onClick={onClose}>
           OK
         </button>
       </div>

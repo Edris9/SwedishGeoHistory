@@ -1,9 +1,8 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import './ProjectStatusPopup.css';
 
 export default function ProjectStatusPopup({ onClose }) {
   const [visible, setVisible] = useState(true);
-  const popupRef = useRef(null);  // ref till popup-diven
 
   if (!visible) return null;
 

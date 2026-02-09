@@ -26,3 +26,13 @@ export async function getEventById(id) {
     if (error) throw error;
     return data;
 }
+
+export async function createUser(name, role) {
+    const { data, error } = await supabase
+        .from('users')
+        .insert([{ name, role }])
+        .select();
+    
+    if (error) throw error;
+    return data[0];
+}

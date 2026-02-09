@@ -1,33 +1,27 @@
 import { useState } from 'react';
 import './Startsida.css';
+import { createUser } from '../services/api';
 
 export default function Startsida({ onStart }) {
-  const [role, setRole] = useState('');      // 'student' eller 'larare'
+  const [role, setRole] = useState('');
   const [namn, setNamn] = useState('');
 
-  // components/Startsida.jsx  (ändra längst ner i handleStart)
-    async function handleStart() {
+  // I handleStart funktionen:
+  async function handleStart() {
     if (!role || !namn.trim()) {
-        alert('Välj roll och skriv ditt namn tack!');
-        return;
+      alert('Välj roll och skriv ditt namn tack!');
+      return;
     }
     
-    // Spara till Supabase via backend
     try {
-        await fetch('http://localhost:5007/api/users', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
-                role: role,
-                name: namn.trim()
-            })
-        });
+      await createUser(namn.trim(), role);
+      console.log('Användare sparad!');
     } catch (error) {
-        console.log('Kunde inte spara användare:', error);
+      console.error('Kunde inte spara användare:', error);
     }
-
+    
     onStart?.();
-}
+  }
 
   return (
     <div className="startsida">

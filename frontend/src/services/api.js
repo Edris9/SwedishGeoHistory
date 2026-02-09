@@ -1,17 +1,28 @@
-const API_URL = 'http://localhost:5007/api';
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = 'https://wcasumuwrsusqqmgouze.supabase.co';
+const supabaseKey = 'sb_publishable_jTwXIQpfzIIyOOIKoOikBg_u8sEtVq8';
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 export async function getEvents(from, to) {
-    let url = `${API_URL}/events`;
+    let query = supabase.from('events').select('*');
     
     if (from && to) {
-        url += `?from=${from}&to=${to}`;
+        query = query.gte('year', from).lte('year', to);
     }
     
-    const response = await fetch(url);
-    return response.json();
+    const { data, error } = await query.order('year');
+    if (error) throw error;
+    return data;
 }
 
 export async function getEventById(id) {
-    const response = await fetch(`${API_URL}/events/${id}`);
-    return response.json();
+    const { data, error } = await supabase
+        .from('events')
+        .select('*')
+        .eq('id', id)
+        .single();
+    
+    if (error) throw error;
+    return data;
 }

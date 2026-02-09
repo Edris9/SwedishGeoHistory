@@ -25,7 +25,8 @@
   max-height: 85vh;                /* maxhöjd på popup */
   overflow-y: auto;                /* aktiverar scrollbar vid behov */
   scrollbar-width: thin;           /* Firefox: tunn scrollbar */
-  scrollbar-color: #64748b #1e293b
+  scrollbar-color: #64748b #1e293b;
+  
 }
 
 .status-popup::-webkit-scrollbar {

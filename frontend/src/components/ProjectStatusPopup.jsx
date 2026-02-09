@@ -16,9 +16,11 @@ export default function ProjectStatusPopup({ onClose }) {
             <h3>✅ KLART</h3>
             <ul>
               <li>Backend API (C#/.NET)</li>
+              <li>Databas (PostgreSQL)</li>
               <li>Scraper (Python/Wikipedia)</li>
               <li>3D-jordglob (MapTiler)</li>
               <li>Klickbara händelser</li>
+              <li>EventPopup med källlänk</li>
               <li>Startsida (roll + namn)</li>
               <li>Timeline-slider</li>
               <li>Kategorier (färgkodade prickar)</li>
@@ -33,6 +35,8 @@ export default function ProjectStatusPopup({ onClose }) {
               <li>AI-röst (Web Speech API)</li>
               <li>Språkstöd (EN/AR/FA)</li>
               <li>Lärarportal (felrapportering)</li>
+              <li>Mobilanpassning</li>
+              <li>Hosting (Railway + Netlify)</li>
             </ul>
           </div>
         </div>

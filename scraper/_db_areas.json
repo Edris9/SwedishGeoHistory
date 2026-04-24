@@ -1,0 +1,1190 @@
+﻿[
+    {
+        "area":  "Stockholm",
+        "antal":  581
+    },
+    {
+        "area":  "SkÃ¥ne",
+        "antal":  440
+    },
+    {
+        "area":  "JÃ¤mtland",
+        "antal":  305
+    },
+    {
+        "area":  "Halland",
+        "antal":  183
+    },
+    {
+        "area":  "MalmÃ¶",
+        "antal":  182
+    },
+    {
+        "area":  "Svealand",
+        "antal":  173
+    },
+    {
+        "area":  "Halmstad",
+        "antal":  141
+    },
+    {
+        "area":  "Poltava",
+        "antal":  140
+    },
+    {
+        "area":  "Ukraina",
+        "antal":  132
+    },
+    {
+        "area":  "Vara",
+        "antal":  124
+    },
+    {
+        "area":  "Lund",
+        "antal":  120
+    },
+    {
+        "area":  "GÃ¶teborg",
+        "antal":  119
+    },
+    {
+        "area":  "Uppsala",
+        "antal":  109
+    },
+    {
+        "area":  "Gotland",
+        "antal":  101
+    },
+    {
+        "area":  "BohuslÃ¤n",
+        "antal":  94
+    },
+    {
+        "area":  "Stralsund",
+        "antal":  92
+    },
+    {
+        "area":  "Helsingborg",
+        "antal":  85
+    },
+    {
+        "area":  "Narva",
+        "antal":  78
+    },
+    {
+        "area":  "Kalmar",
+        "antal":  68
+    },
+    {
+        "area":  "Tyskland",
+        "antal":  65
+    },
+    {
+        "area":  "Estland",
+        "antal":  60
+    },
+    {
+        "area":  "Polen",
+        "antal":  54
+    },
+    {
+        "area":  "LÃ¼beck",
+        "antal":  48
+    },
+    {
+        "area":  "Gestilren",
+        "antal":  48
+    },
+    {
+        "area":  "Bohus",
+        "antal":  48
+    },
+    {
+        "area":  "Breitenfeld",
+        "antal":  44
+    },
+    {
+        "area":  "Mora",
+        "antal":  42
+    },
+    {
+        "area":  "Visby",
+        "antal":  41
+    },
+    {
+        "area":  "Dalarna",
+        "antal":  39
+    },
+    {
+        "area":  "VÃ¤sterÃ¥s",
+        "antal":  38
+    },
+    {
+        "area":  "Bremen",
+        "antal":  38
+    },
+    {
+        "area":  "Ãstersund",
+        "antal":  38
+    },
+    {
+        "area":  "KliszÃ³w",
+        "antal":  34
+    },
+    {
+        "area":  "Riga",
+        "antal":  32
+    },
+    {
+        "area":  "Wien",
+        "antal":  32
+    },
+    {
+        "area":  "Ãrebro",
+        "antal":  30
+    },
+    {
+        "area":  "Arboga",
+        "antal":  28
+    },
+    {
+        "area":  "Prag",
+        "antal":  28
+    },
+    {
+        "area":  "NÃ¶rdlingen",
+        "antal":  28
+    },
+    {
+        "area":  "Europa",
+        "antal":  26
+    },
+    {
+        "area":  "Wismar",
+        "antal":  26
+    },
+    {
+        "area":  "Ryssland",
+        "antal":  23
+    },
+    {
+        "area":  "Birka",
+        "antal":  22
+    },
+    {
+        "area":  "SÃ¶lvesborg",
+        "antal":  22
+    },
+    {
+        "area":  "Vadstena",
+        "antal":  22
+    },
+    {
+        "area":  "Karlskrona",
+        "antal":  22
+    },
+    {
+        "area":  "SmÃ¥land",
+        "antal":  22
+    },
+    {
+        "area":  "Riddarholmskyrkan",
+        "antal":  22
+    },
+    {
+        "area":  "Blekinge",
+        "antal":  22
+    },
+    {
+        "area":  "Danzig",
+        "antal":  20
+    },
+    {
+        "area":  "Leipzig",
+        "antal":  20
+    },
+    {
+        "area":  "NÃ¤rke",
+        "antal":  20
+    },
+    {
+        "area":  "NÃ¶teborg",
+        "antal":  20
+    },
+    {
+        "area":  "LÃ¶dÃ¶se",
+        "antal":  18
+    },
+    {
+        "area":  "KÃ¶penhamn",
+        "antal":  18
+    },
+    {
+        "area":  "Ystad",
+        "antal":  18
+    },
+    {
+        "area":  "Stettin",
+        "antal":  17
+    },
+    {
+        "area":  "VÃ¤stergÃ¶tland",
+        "antal":  17
+    },
+    {
+        "area":  "UtlÃ¤ndsk",
+        "antal":  17
+    },
+    {
+        "area":  "Holowczyn",
+        "antal":  16
+    },
+    {
+        "area":  "Johans",
+        "antal":  16
+    },
+    {
+        "area":  "Sveriges",
+        "antal":  16
+    },
+    {
+        "area":  "JÃ¶nkÃ¶ping",
+        "antal":  16
+    },
+    {
+        "area":  "Mainz",
+        "antal":  16
+    },
+    {
+        "area":  "NorrkÃ¶ping",
+        "antal":  16
+    },
+    {
+        "area":  "LinkÃ¶ping",
+        "antal":  15
+    },
+    {
+        "area":  "Varberg",
+        "antal":  14
+    },
+    {
+        "area":  "Reval",
+        "antal":  14
+    },
+    {
+        "area":  "Fraustadt",
+        "antal":  14
+    },
+    {
+        "area":  "Jakovtsi",
+        "antal":  14
+    },
+    {
+        "area":  "Falkenberg",
+        "antal":  14
+    },
+    {
+        "area":  "Greifswald",
+        "antal":  14
+    },
+    {
+        "area":  "Marstrand",
+        "antal":  14
+    },
+    {
+        "area":  "Stamford Bridge",
+        "antal":  14
+    },
+    {
+        "area":  "Dorpat",
+        "antal":  12
+    },
+    {
+        "area":  "Warszawa",
+        "antal":  12
+    },
+    {
+        "area":  "ÃstersjÃ¶n",
+        "antal":  12
+    },
+    {
+        "area":  "Kungliga Krigsvetenskapsakademiens",
+        "antal":  12
+    },
+    {
+        "area":  "Kristianstad",
+        "antal":  12
+    },
+    {
+        "area":  "VÃ¤rÃ¤lÃ¤",
+        "antal":  12
+    },
+    {
+        "area":  "NorrkÃ¶pings",
+        "antal":  12
+    },
+    {
+        "area":  "Usedom",
+        "antal":  12
+    },
+    {
+        "area":  "Stockholms",
+        "antal":  12
+    },
+    {
+        "area":  "Finland",
+        "antal":  11
+    },
+    {
+        "area":  "KnÃ¤red",
+        "antal":  10
+    },
+    {
+        "area":  "Sachsen",
+        "antal":  10
+    },
+    {
+        "area":  "Europas",
+        "antal":  10
+    },
+    {
+        "area":  "Viborg",
+        "antal":  10
+    },
+    {
+        "area":  "Sundsvall",
+        "antal":  10
+    },
+    {
+        "area":  "LÃ¼tzen",
+        "antal":  10
+    },
+    {
+        "area":  "Osmanska",
+        "antal":  10
+    },
+    {
+        "area":  "Brandenburg",
+        "antal":  10
+    },
+    {
+        "area":  "Landskrona",
+        "antal":  10
+    },
+    {
+        "area":  "Tver",
+        "antal":  10
+    },
+    {
+        "area":  "Vallentuna",
+        "antal":  10
+    },
+    {
+        "area":  "StÃ¥ngebro",
+        "antal":  10
+    },
+    {
+        "area":  "Fredrikshamn",
+        "antal":  10
+    },
+    {
+        "area":  "VissefjÃ¤rda",
+        "antal":  10
+    },
+    {
+        "area":  "Roskilde",
+        "antal":  10
+    },
+    {
+        "area":  "Ãlvsborg",
+        "antal":  9
+    },
+    {
+        "area":  "Jam Zapolski",
+        "antal":  8
+    },
+    {
+        "area":  "Livland",
+        "antal":  8
+    },
+    {
+        "area":  "Schlesien",
+        "antal":  8
+    },
+    {
+        "area":  "Renvall",
+        "antal":  8
+    },
+    {
+        "area":  "Ostfriesland",
+        "antal":  8
+    },
+    {
+        "area":  "Paris",
+        "antal":  8
+    },
+    {
+        "area":  "BrÃ¶msebro",
+        "antal":  8
+    },
+    {
+        "area":  "Skara",
+        "antal":  8
+    },
+    {
+        "area":  "Bergslagen",
+        "antal":  8
+    },
+    {
+        "area":  "Haag",
+        "antal":  8
+    },
+    {
+        "area":  "Lindisfarne",
+        "antal":  8
+    },
+    {
+        "area":  "Florens",
+        "antal":  8
+    },
+    {
+        "area":  "Pommern",
+        "antal":  8
+    },
+    {
+        "area":  "HÃ¥laveden",
+        "antal":  8
+    },
+    {
+        "area":  "SparrsÃ¤tra",
+        "antal":  8
+    },
+    {
+        "area":  "Norden",
+        "antal":  8
+    },
+    {
+        "area":  "KungÃ¤lv",
+        "antal":  8
+    },
+    {
+        "area":  "Hova",
+        "antal":  8
+    },
+    {
+        "area":  "Laholm",
+        "antal":  8
+    },
+    {
+        "area":  "UmeÃ¥",
+        "antal":  8
+    },
+    {
+        "area":  "Ãresund",
+        "antal":  8
+    },
+    {
+        "area":  "Sankt Gallen",
+        "antal":  8
+    },
+    {
+        "area":  "Nordens",
+        "antal":  8
+    },
+    {
+        "area":  "Nydala",
+        "antal":  8
+    },
+    {
+        "area":  "Ãland",
+        "antal":  8
+    },
+    {
+        "area":  "Frankfurt",
+        "antal":  8
+    },
+    {
+        "area":  "Danmark",
+        "antal":  8
+    },
+    {
+        "area":  "Kirkholm",
+        "antal":  6
+    },
+    {
+        "area":  "Napoleonkrigen",
+        "antal":  6
+    },
+    {
+        "area":  "Slagelse",
+        "antal":  6
+    },
+    {
+        "area":  "Tyska",
+        "antal":  6
+    },
+    {
+        "area":  "Storbritannien",
+        "antal":  6
+    },
+    {
+        "area":  "Peter",
+        "antal":  6
+    },
+    {
+        "area":  "Hamburg",
+        "antal":  6
+    },
+    {
+        "area":  "Karl",
+        "antal":  6
+    },
+    {
+        "area":  "VÃ¤stmanland",
+        "antal":  6
+    },
+    {
+        "area":  "BÃ¶hmen",
+        "antal":  6
+    },
+    {
+        "area":  "Krakow",
+        "antal":  6
+    },
+    {
+        "area":  "Nystad",
+        "antal":  6
+    },
+    {
+        "area":  "Ãsteuropa",
+        "antal":  6
+    },
+    {
+        "area":  "Chemnitz",
+        "antal":  6
+    },
+    {
+        "area":  "Olustra",
+        "antal":  6
+    },
+    {
+        "area":  "BÃ¤rwalde",
+        "antal":  6
+    },
+    {
+        "area":  "Kristian",
+        "antal":  6
+    },
+    {
+        "area":  "BrÃ¼nn",
+        "antal":  6
+    },
+    {
+        "area":  "Sveaborg",
+        "antal":  6
+    },
+    {
+        "area":  "Thorn",
+        "antal":  6
+    },
+    {
+        "area":  "Kina",
+        "antal":  6
+    },
+    {
+        "area":  "VÃ¤silkovo",
+        "antal":  6
+    },
+    {
+        "area":  "Dorotea",
+        "antal":  6
+    },
+    {
+        "area":  "Storkyro",
+        "antal":  6
+    },
+    {
+        "area":  "SkÃ¤nninge",
+        "antal":  6
+    },
+    {
+        "area":  "Baltikum",
+        "antal":  6
+    },
+    {
+        "area":  "Norge",
+        "antal":  6
+    },
+    {
+        "area":  "Uddevalla",
+        "antal":  6
+    },
+    {
+        "area":  "Rheinfelden",
+        "antal":  6
+    },
+    {
+        "area":  "Sverige",
+        "antal":  5
+    },
+    {
+        "area":  "Ãrbyhus",
+        "antal":  5
+    },
+    {
+        "area":  "Mariakyrkan",
+        "antal":  4
+    },
+    {
+        "area":  "Pearl Harbor",
+        "antal":  4
+    },
+    {
+        "area":  "Nyland",
+        "antal":  4
+    },
+    {
+        "area":  "Grodno",
+        "antal":  4
+    },
+    {
+        "area":  "StrÃ¤ngnÃ¤s",
+        "antal":  4
+    },
+    {
+        "area":  "Elisabet",
+        "antal":  4
+    },
+    {
+        "area":  "VÃ¤steuropas",
+        "antal":  4
+    },
+    {
+        "area":  "Semjonovka",
+        "antal":  4
+    },
+    {
+        "area":  "Hamilton",
+        "antal":  4
+    },
+    {
+        "area":  "England",
+        "antal":  4
+    },
+    {
+        "area":  "SÃ¶dermanland",
+        "antal":  4
+    },
+    {
+        "area":  "Sverige Kristian",
+        "antal":  4
+    },
+    {
+        "area":  "Raseborgs",
+        "antal":  4
+    },
+    {
+        "area":  "Pobivanka",
+        "antal":  4
+    },
+    {
+        "area":  "Gotlands",
+        "antal":  4
+    },
+    {
+        "area":  "St Gallen",
+        "antal":  4
+    },
+    {
+        "area":  "KÃ¶nigsberg",
+        "antal":  4
+    },
+    {
+        "area":  "Nordtyskland",
+        "antal":  4
+    },
+    {
+        "area":  "Ahmed",
+        "antal":  4
+    },
+    {
+        "area":  "Potjep",
+        "antal":  4
+    },
+    {
+        "area":  "Dover",
+        "antal":  4
+    },
+    {
+        "area":  "Elbing",
+        "antal":  4
+    },
+    {
+        "area":  "Basel",
+        "antal":  4
+    },
+    {
+        "area":  "Mansfelds",
+        "antal":  4
+    },
+    {
+        "area":  "Konstantinopel",
+        "antal":  4
+    },
+    {
+        "area":  "Litauen",
+        "antal":  4
+    },
+    {
+        "area":  "KlÃ¶cker Ehrenstrahl",
+        "antal":  4
+    },
+    {
+        "area":  "Vendel",
+        "antal":  4
+    },
+    {
+        "area":  "Frederiksborg",
+        "antal":  4
+    },
+    {
+        "area":  "Riksarkivet",
+        "antal":  4
+    },
+    {
+        "area":  "Kalmarunionen",
+        "antal":  4
+    },
+    {
+        "area":  "Fredrikshald",
+        "antal":  4
+    },
+    {
+        "area":  "Nokia",
+        "antal":  4
+    },
+    {
+        "area":  "Wiesloch",
+        "antal":  4
+    },
+    {
+        "area":  "Orienten",
+        "antal":  4
+    },
+    {
+        "area":  "Ungern",
+        "antal":  4
+    },
+    {
+        "area":  "Geijer",
+        "antal":  4
+    },
+    {
+        "area":  "Svenskt",
+        "antal":  4
+    },
+    {
+        "area":  "SparrsÃ¤ter",
+        "antal":  4
+    },
+    {
+        "area":  "Karolinska",
+        "antal":  4
+    },
+    {
+        "area":  "Vorsklas",
+        "antal":  4
+    },
+    {
+        "area":  "Helsingfors",
+        "antal":  4
+    },
+    {
+        "area":  "Dessau",
+        "antal":  4
+    },
+    {
+        "area":  "Mecklenburg",
+        "antal":  4
+    },
+    {
+        "area":  "Anklam",
+        "antal":  4
+    },
+    {
+        "area":  "SÃ¤rkland",
+        "antal":  3
+    },
+    {
+        "area":  "Uppland",
+        "antal":  3
+    },
+    {
+        "area":  "VÃ¤steuropa",
+        "antal":  2
+    },
+    {
+        "area":  "DÃ¼namÃ¼nde",
+        "antal":  2
+    },
+    {
+        "area":  "HÃ¥slÃ¶v",
+        "antal":  2
+    },
+    {
+        "area":  "Ilmola",
+        "antal":  2
+    },
+    {
+        "area":  "Sydeuropa",
+        "antal":  2
+    },
+    {
+        "area":  "Bender",
+        "antal":  2
+    },
+    {
+        "area":  "KÃ¶inge",
+        "antal":  2
+    },
+    {
+        "area":  "Preussen",
+        "antal":  2
+    },
+    {
+        "area":  "Orust",
+        "antal":  2
+    },
+    {
+        "area":  "Krokom",
+        "antal":  2
+    },
+    {
+        "area":  "Indien",
+        "antal":  2
+    },
+    {
+        "area":  "Roskildefreden",
+        "antal":  2
+    },
+    {
+        "area":  "Nowe Miasto",
+        "antal":  2
+    },
+    {
+        "area":  "Teusina",
+        "antal":  2
+    },
+    {
+        "area":  "KungstrÃ¤dgÃ¥rden",
+        "antal":  2
+    },
+    {
+        "area":  "Zagarin",
+        "antal":  2
+    },
+    {
+        "area":  "Ylikangas",
+        "antal":  2
+    },
+    {
+        "area":  "Traventhal",
+        "antal":  2
+    },
+    {
+        "area":  "Maria Eleonora",
+        "antal":  2
+    },
+    {
+        "area":  "Oldendorf",
+        "antal":  2
+    },
+    {
+        "area":  "Karlstad",
+        "antal":  2
+    },
+    {
+        "area":  "Magnus Eriksson",
+        "antal":  2
+    },
+    {
+        "area":  "Fyrisvallarna",
+        "antal":  2
+    },
+    {
+        "area":  "Bibeln",
+        "antal":  2
+    },
+    {
+        "area":  "SjÃ¶ared",
+        "antal":  2
+    },
+    {
+        "area":  "Frankrike",
+        "antal":  2
+    },
+    {
+        "area":  "Turkiet",
+        "antal":  2
+    },
+    {
+        "area":  "Simtuna",
+        "antal":  2
+    },
+    {
+        "area":  "Poltavas",
+        "antal":  2
+    },
+    {
+        "area":  "LuleÃ¥",
+        "antal":  2
+    },
+    {
+        "area":  "Spanien",
+        "antal":  2
+    },
+    {
+        "area":  "Sandviken",
+        "antal":  2
+    },
+    {
+        "area":  "SkellefteÃ¥",
+        "antal":  2
+    },
+    {
+        "area":  "RÃ¼gen",
+        "antal":  2
+    },
+    {
+        "area":  "Nyborg",
+        "antal":  2
+    },
+    {
+        "area":  "Gadebusch",
+        "antal":  2
+    },
+    {
+        "area":  "Ingolstadt",
+        "antal":  2
+    },
+    {
+        "area":  "Aachen",
+        "antal":  2
+    },
+    {
+        "area":  "Svenska Pommern",
+        "antal":  2
+    },
+    {
+        "area":  "Kamenka",
+        "antal":  2
+    },
+    {
+        "area":  "Tuomaala",
+        "antal":  2
+    },
+    {
+        "area":  "Klusjino",
+        "antal":  2
+    },
+    {
+        "area":  "Dalsland",
+        "antal":  2
+    },
+    {
+        "area":  "Rysslands",
+        "antal":  2
+    },
+    {
+        "area":  "VÃ¤xjÃ¶",
+        "antal":  2
+    },
+    {
+        "area":  "SkÃ¥neland",
+        "antal":  2
+    },
+    {
+        "area":  "MÃ¼nchen",
+        "antal":  2
+    },
+    {
+        "area":  "Fransk",
+        "antal":  2
+    },
+    {
+        "area":  "Savolax",
+        "antal":  2
+    },
+    {
+        "area":  "Braunschweig",
+        "antal":  2
+    },
+    {
+        "area":  "LinkÃ¶pings",
+        "antal":  2
+    },
+    {
+        "area":  "HangÃ¶",
+        "antal":  2
+    },
+    {
+        "area":  "KÃ¶ge",
+        "antal":  2
+    },
+    {
+        "area":  "Maloje Budisjtje",
+        "antal":  2
+    },
+    {
+        "area":  "Lillryssland",
+        "antal":  2
+    },
+    {
+        "area":  "Historisk",
+        "antal":  2
+    },
+    {
+        "area":  "Leytebukten",
+        "antal":  2
+    },
+    {
+        "area":  "Skandinaviens",
+        "antal":  2
+    },
+    {
+        "area":  "Sankt Petersburg",
+        "antal":  2
+    },
+    {
+        "area":  "Torgau",
+        "antal":  2
+    },
+    {
+        "area":  "EnkÃ¶ping",
+        "antal":  2
+    },
+    {
+        "area":  "USA",
+        "antal":  2
+    },
+    {
+        "area":  "SÃ¶derkÃ¶ping",
+        "antal":  2
+    },
+    {
+        "area":  "Villmanstrand",
+        "antal":  2
+    },
+    {
+        "area":  "Hawaiigruppen",
+        "antal":  2
+    },
+    {
+        "area":  "Borgberget",
+        "antal":  2
+    },
+    {
+        "area":  "Mariefred",
+        "antal":  2
+    },
+    {
+        "area":  "BrÃ¤nnkyrka",
+        "antal":  2
+    },
+    {
+        "area":  "SÃ¶dermalm",
+        "antal":  2
+    },
+    {
+        "area":  "Rain",
+        "antal":  2
+    },
+    {
+        "area":  "Stolbova",
+        "antal":  2
+    },
+    {
+        "area":  "Kletsk",
+        "antal":  2
+    },
+    {
+        "area":  "Vadstenadiariet",
+        "antal":  2
+    },
+    {
+        "area":  "Heimskringla",
+        "antal":  2
+    },
+    {
+        "area":  "UleÃ¥borgs",
+        "antal":  2
+    },
+    {
+        "area":  "Sunne",
+        "antal":  2
+    },
+    {
+        "area":  "Vasakoret",
+        "antal":  2
+    },
+    {
+        "area":  "Trelleborg",
+        "antal":  2
+    },
+    {
+        "area":  "Italien",
+        "antal":  2
+    },
+    {
+        "area":  "Lindberg",
+        "antal":  2
+    },
+    {
+        "area":  "Lena",
+        "antal":  2
+    },
+    {
+        "area":  "Guds",
+        "antal":  2
+    },
+    {
+        "area":  "Rostock",
+        "antal":  2
+    },
+    {
+        "area":  "Virserums",
+        "antal":  2
+    },
+    {
+        "area":  "AltranstÃ¤dt",
+        "antal":  2
+    },
+    {
+        "area":  "VÃ¤rmland",
+        "antal":  1
+    },
+    {
+        "area":  "NykÃ¶ping",
+        "antal":  1
+    },
+    {
+        "area":  "Ã\u0085bo",
+        "antal":  1
+    },
+    {
+        "area":  "Moss",
+        "antal":  1
+    },
+    {
+        "area":  "Borgeby",
+        "antal":  1
+    },
+    {
+        "area":  "AlsnÃ¶",
+        "antal":  1
+    },
+    {
+        "area":  "AlmarestÃ¤ket",
+        "antal":  1
+    }
+]

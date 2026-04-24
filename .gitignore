@@ -1,0 +1,27 @@
+# Hemligheter / API-nycklar
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+Ai/.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Tooling / skrap
+.vscode/
+.idea/
+*.log
+*.tmp
+scraper/_*.json
+scraper/_*.txt

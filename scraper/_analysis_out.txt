@@ -1,0 +1,92 @@
+﻿coordinates.js: 419 nycklar
+  probe 'sk├Ñne': JA  coord=(55.99, 13.59)
+  probe 'j├ñmtland': JA  coord=(63.17, 14.64)
+  probe 'malm├Â': JA  coord=(55.6, 13.0)
+  probe 'g├Âteborg': JA  coord=(57.71, 11.97)
+  probe 'bohusl├ñn': JA  coord=(58.32, 11.45)
+aliaser: 7
+Totalt rader: 5760
+
+=== Topp 20 KOORDINAT-klumpar (flest prickar pa samma punkt) ===
+ 2210  ( 62.00,  17.00) <-- DEFAULT (mitten av Sverige)
+          440  Sk├â┬Ñne
+          305  J├â┬ñmtland
+          182  Malm├â┬Â
+          119  G├â┬Âteborg
+           94  Bohusl├â┬ñn
+         ... + 174 fler
+  593  ( 59.33,  18.07)
+          581  Stockholm
+           12  Stockholms
+  183  ( 56.89,  12.80)
+          183  Halland
+  173  ( 59.70,  15.50)
+          173  Svealand
+  144  ( 49.59,  34.55)
+          140  Poltava
+            4  Semjonovka
+  141  ( 56.67,  12.86)
+          141  Halmstad
+  132  ( 48.38,  31.17)
+          132  Ukraina
+  124  ( 58.26,  12.95)
+          124  Vara
+  120  ( 55.70,  13.19)
+          120  Lund
+  109  ( 59.86,  17.64)
+          109  Uppsala
+  101  ( 57.47,  18.49)
+          101  Gotland
+   97  ( 51.16,  10.45)
+           65  Tyskland
+           26  Europa
+            6  Tyska
+   92  ( 54.31,  13.09)
+           92  Stralsund
+   85  ( 56.04,  12.69)
+           85  Helsingborg
+   78  ( 59.38,  28.20)
+           78  Narva
+   68  ( 56.66,  16.36)
+           68  Kalmar
+   60  ( 58.60,  25.01)
+           60  Estland
+   56  ( 58.38,  13.43)
+           48  Gestilren
+            8  Skara
+   54  ( 51.92,  19.15)
+           54  Polen
+   48  ( 57.85,  11.98)
+           48  Bohus
+
+=== Areor som saknas i coordinates.js: 179 unika, 2210 rader ===
+ 440  Sk├â┬Ñne
+ 305  J├â┬ñmtland
+ 182  Malm├â┬Â
+ 119  G├â┬Âteborg
+  94  Bohusl├â┬ñn
+  48  L├â┬╝beck
+  38  V├â┬ñster├â┬Ñs
+  38  ├â┬ûstersund
+  34  Klisz├â┬│w
+  30  ├â┬ûrebro
+  28  N├â┬Ârdlingen
+  22  S├â┬Âlvesborg
+  22  Sm├â┬Ñland
+  20  N├â┬ñrke
+  20  N├â┬Âteborg
+  18  L├â┬Âd├â┬Âse
+  18  K├â┬Âpenhamn
+  17  V├â┬ñsterg├â┬Âtland
+  17  Utl├â┬ñndsk
+  16  Johans
+  16  J├â┬Ânk├â┬Âping
+  16  Norrk├â┬Âping
+  15  Link├â┬Âping
+  12  ├â┬ûstersj├â┬Ân
+  12  Kungliga Krigsvetenskapsakademiens
+  12  V├â┬ñr├â┬ñl├â┬ñ
+  12  Norrk├â┬Âpings
+  10  Kn├â┬ñred
+  10  Europas
+  10  L├â┬╝tzen

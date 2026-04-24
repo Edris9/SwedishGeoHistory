@@ -65,16 +65,48 @@
   width: 94%;
   height: 160px;
   opacity: 0;
-  cursor: grab;
+  cursor: pointer;
   pointer-events: auto;
   z-index: 20;
   -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-slider:active {
+  cursor: grabbing;
+}
+
+.timeline-slider::-webkit-slider-runnable-track {
+  height: 160px;
+  background: transparent;
+  border: none;
+}
+
+.timeline-slider::-moz-range-track {
+  height: 160px;
+  background: transparent;
+  border: none;
 }
 
 .timeline-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 0;
-  height: 0;
+  appearance: none;
+  width: 20px;
+  height: 160px;
+  background: transparent;
+  border: none;
+  cursor: grab;
+}
+
+.timeline-slider::-moz-range-thumb {
+  width: 20px;
+  height: 160px;
+  background: transparent;
+  border: none;
+  cursor: grab;
 }
 
 /* För touch-enheter – lite större interaktionsyta */
